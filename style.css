@@ -52,6 +52,10 @@ footer {
     text-align: center;
 }
 
+section img{
+    width: 800px;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -66,5 +70,9 @@ footer {
         height: 800px;
         margin-top: 200px;
         padding: 20px;
+    }
+
+    section img{
+        width: 80%;
     }
 }
