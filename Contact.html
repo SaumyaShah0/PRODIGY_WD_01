@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    nav .active {
+        color: #ffcc00;
+    }
+
+    nav a:hover {
+        color: #ffcc00;
+    }
+
+    section {
+        height: 800px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: green;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 5px 0;
+        }
+
+        section {
+            height: 800px;
+            margin-top: 200px;
+            padding: 20px;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="#">Services</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </div>
+
+    <footer>&copy; 2024 Saumya Shah. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
